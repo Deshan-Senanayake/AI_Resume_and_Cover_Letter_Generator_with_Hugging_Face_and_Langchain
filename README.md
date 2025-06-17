@@ -1,100 +1,160 @@
-📄 AI Resume & Cover Letter Generator
-An AI-powered web application that analyzes your resume, summarizes your experience, and generates personalized cover letters — all in one place. Built with 💡 LangChain, 🤖 Hugging Face Transformers, and 🌐 Streamlit.
+# 📄 AI Resume & Cover Letter Generator
 
-🚀 Features
-📤 Upload your resume in PDF format
+An AI-powered web application that analyzes your resume, summarizes your experience, and generates tailored cover letters — all in one place.
 
-🔍 Extract and summarize your resume using an LLM
+Built with 💡 **LangChain**, 🤖 **Hugging Face Transformers**, and 🌐 **Streamlit**.
 
-📄 Paste a job description to match against your profile
+---
 
-✍️ Generate tailored cover letters in 3 styles: Formal, Creative, or Concise
+## ✨ Features
 
-🧠 Skill match analysis (Matched vs Missing Skills)
+- 📤 Upload your resume in **PDF** format
+- 🔍 Extract & summarize your resume using an **LLM**
+- 📄 Paste a **job description** for tailored analysis
+- ✍️ Generate personalized **cover letters** in 3 styles:
+    - `Formal`
+    - `Creative`
+    - `Concise`
+- 🧠 **Skill Match Analysis**:
+    - Shows Matched vs. Missing Skills
+    - Calculates similarity score
+- 📥 Export cover letter as a **professional PDF**
 
-📥 Download your cover letter as a professional PDF
+---
 
-🛠️ Tech Stack
-Layer	                  Technology
-👨‍💻 Frontend---------------Streamlit
-🤖 AI/LLM Models----------Falcon-7B-Instruct / Hugging Face Pipelines
-🔗 LLM Wrappers-----------LangChain
-📄 PDF Handling-----------PyMuPDF (fitz), FPDF
-🧠 Skill Matching---------Scikit-learn, RapidFuzz
+## 🛠️ Tech Stack
+
+| Layer         | Technology                                                                 |
+|---------------|----------------------------------------------------------------------------|
+| 👨‍💻 Frontend     | Streamlit                                                                |
+| 🤖 AI/LLMs      | Falcon-7B-Instruct / Hugging Face Transformers                           |
+| 🔗 LLM Wrappers | LangChain                                                                 |
+| 📄 PDF Parsing  | PyMuPDF (`fitz`), FPDF                                                    |
+| 🧠 Skill Match  | Scikit-learn + RapidFuzz                                                  |
+
+---
+
+## 📂 Project Structure
 
 resume-cover-gen/
 ├── app.py
+
 ├── chains/
-│   ├── summarize.py
-│   ├── generate_letter.py
+
+│ ├── summarize.py # Resume summarization logic
+
+│ └── generate_letter.py # Cover letter generation logic
+
 ├── utils/
-│   ├── pdf_utils.py
-│   ├── skill_gap.py
-│   ├── pdf_writer.py
+
+│ ├── pdf_utils.py # PDF text extraction
+
+│ ├── skill_gap.py # Skill overlap analyzer
+
+│ └── pdf_writer.py # PDF export logic
+
 ├── models/
-│   └── model_loader.py
 
+│ └── model_loader.py # Optional: load LLM pipelines
 
+├── requirements.txt
 
-🧪 Setup Instructions
-1. Clone this repo
+└── README.md
+
+---
+
+## 💻 Setup Instructions
+
+1. **Clone this repo**
+```bash
 git clone https://github.com/your-username/resume-cover-gen.git
 cd resume-cover-gen
-
-2. Create & activate a virtual environment
+```
+2. **Create and activate virtual environment**
+```
 python -m venv venv
-venv\Scripts\activate  # On Windows
+venv\Scripts\activate   # On Windows
+# OR
+source venv/bin/activate  # On Mac/Linux
+```
 
-3.Install dependencies
+3. **Install dependencies**
+```
 pip install -r requirements.txt
+```
 
-4.Run the app
+4. **Run the app**
+```
 streamlit run app.py
+```
 
+---
 
-🧾 Sample Usage
-Upload your resume (PDF)
+## 🧪 How to Use
+Upload your resume as a PDF
 
-Paste any job description
+Paste the job description you’re targeting
 
-Click "Summarize Resume" ➜ View extracted summary
+Click "Summarize Resume" → review auto-generated summary
 
-Select cover letter style ➜ Click "Generate Cover Letter"
+Select a cover letter style → click "Generate Cover Letter"
 
-Download it as PDF 🎉
+Download it as a PDF 🎉
 
+---
 
-Dependencies
-
+## 🔧 Dependencies
 streamlit
+
 langchain
+
 transformers
+
 huggingface_hub
+
 scikit-learn
+
 rapidfuzz
+
 fpdf
+
 PyMuPDF
+
 inflect
 
-🔧 Install all with:
+---
+
+📦 Install them all with:
 
 pip install -r requirements.txt
 
+---
 
-📌 Future Enhancements
-📊 Skill gap insights chart
+## 📌 Future Enhancements
+📊 Visual skill gap chart
 
-🧠 Skill recommendations based on missing skills
+🧠 Suggested skills based on missing ones
 
-📝 Resume optimizer suggestions
+✍️ Resume optimizer (LLM-powered insights)
 
 🌐 Multi-language support
 
-🙌 Contributors
-Deshan Senanayake – GitHub
+---
 
-Model credits: Hugging Face
+## 📝 License
 
-📃 License
-This project is licensed under the MIT License.
+MIT License 
+
+Feel free to fork, modify, and contribute!
+
+---
+
+## 🙋‍♂️ Author
+Deshan Senanayake 
+
+📧 smddsenyake@gmail.com
+
+🔗 LinkedIn : https://www.linkedin.com/in/deshan-senanayake-7a0695292/
+
+🔗 GitHub : https://github.com/Deshan-Senanayake
 
