@@ -4,6 +4,11 @@ An AI-powered web application that analyzes your resume, summarizes your experie
 
 Built with 💡 **LangChain**, 🤖 **Hugging Face Transformers**, and 🌐 **Streamlit**.
 
+![Screenshot 2025-06-16 151401](https://github.com/user-attachments/assets/dd1affa5-0e45-4008-9911-efe9cf017609)
+![Screenshot 2025-06-16 153553](https://github.com/user-attachments/assets/351bd322-ea49-4306-8370-21944b86c9bb)
+![Screenshot 2025-06-16 173335 1](https://github.com/user-attachments/assets/8a26f761-16b0-49c6-a737-5a44b929a4ce)
+
+
 ---
 
 ## ✨ Features
